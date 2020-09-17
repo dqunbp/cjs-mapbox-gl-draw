@@ -24,8 +24,8 @@
     "dev": "rollup -c -w",
     "test": "node test/test.js",
     "pretest": "npm run build",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/dist",
+    "predeploy": "cd next-js-example && npm install && NODE_ENV=production npm run build",
+    "deploy": "gh-pages -d next-js-example/out",
     "semantic-release": "semantic-release",
     "commit": "git-cz"
   },

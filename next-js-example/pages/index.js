@@ -27,6 +27,15 @@ export default function Home() {
       <Head>
         <title>Next.js with Mapbox Draw!</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.0/mapbox-gl-draw.css"
+          type="text/css"
+        />
       </Head>
       <h1>CommonJS converted mapbox-gl-draw</h1>
       <div className={styles.main}>
@@ -35,3 +44,9 @@ export default function Home() {
     </div>
   );
 }
+
+// export async function getStaticProps(context) {
+//   return {
+//     props: {}, // will be passed to the page component as props
+//   };
+// }
